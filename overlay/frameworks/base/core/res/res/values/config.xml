@@ -21,7 +21,7 @@
              4  UI_MODE_TYPE_TELEVISION
              5  UI_MODE_TYPE_APPLIANCE
          Any other values will have surprising consequences. -->
-    <integer name="config_defaultUiModeType">4</integer>
+    <integer name="config_defaultUiModeType">1</integer>
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
@@ -54,7 +54,7 @@
     </string-array>
 
     <!-- Apps that are authorized to access shared accounts -->
-    <string name="config_appsAuthorizedForSharedAccounts">;com.android.tv.settings;</string>
+    <string name="config_appsAuthorizedForSharedAccounts">;com.android.settings;</string>
 
     <!--
        Sets the package names whose certificates should be used to

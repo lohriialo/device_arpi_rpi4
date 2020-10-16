@@ -15,8 +15,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-USE_OEM_TV_APP := true
-$(call inherit-product, device/google/atv/products/atv_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_no_telephony.mk)
 
 PRODUCT_NAME := rpi4
 PRODUCT_DEVICE := rpi4
@@ -38,8 +37,7 @@ PRODUCT_SOONG_NAMESPACES += external/mesa3d
 
 # application packages
 PRODUCT_PACKAGES += \
-    DeskClock \
-    RpLauncher
+    Launcher3
 
 # system packages
 PRODUCT_PACKAGES += \
@@ -125,7 +123,7 @@ PRODUCT_COPY_FILES := \
     $(PRODUCT_COPY_FILES)
 
 DEVICE_PACKAGE_OVERLAYS := device/arpi/rpi4/overlay
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
-PRODUCT_CHARACTERISTICS := tv
+PRODUCT_AAPT_PREF_CONFIG := mdpi
+PRODUCT_CHARACTERISTICS := tablet
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
