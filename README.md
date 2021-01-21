@@ -29,7 +29,7 @@ Syncing Android 11 source code, more details https://github.com/android-rpi/loca
   - `cd WORKING_DIRECTORY`
   - `repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r27`
   - `git clone https://github.com/android-rpi/local_manifests .repo/local_manifests -b arpi-11`
-  - `repo sync`
+  - `repo sync -j4`
   
 (Optional) if network error :
 -------------
